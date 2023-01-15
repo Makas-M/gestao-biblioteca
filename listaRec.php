@@ -1,9 +1,22 @@
+<?php
+
+include("index.php");
+
+$consulta = "Select * from requisicao";
+$con = mysqli -> query($consulta);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-pt">
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
 	<title>Gestão de Uma Biblioteca</title>
+
+
+
 </head>
 <body>
 	<section id="header">
