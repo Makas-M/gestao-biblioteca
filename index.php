@@ -11,7 +11,16 @@
  	$nivel = $_GET['categoria'];
  	$dataAq = $_GET['data'];
 
- 	//variavel que indica o tempo de estadia com o livro
+ 	//conexao com a base de dados
+ 	$connection = mysqli_connect('localhost', 'root', '', 'gestao_biblioteca');
+
+ 	if ($connection -> connect_error) {
+ 		die('connection failed'. $connection -> connect_error);
+ 	} else{
+ 		$db = $connection -> prepare("insert into requisicao (nome, BI, telefone, nivel, titulo, edicao, autor, dataAq) values (?,?,?,?,?,?,?,?)");
+ 		$db -> bind_param('ssssssss', $nome, $BI, $telefone, $nivel, $titulo, $edicao, $autor, $dataAq);
+ 		$db -> execute();
+ 	}
  
 
  	if ($nivel == "Professor") {
@@ -114,4 +123,9 @@
 	</html>";
 
 echo $html;
+
+
+$db -> close();
+$connection -> close();
+
 ?>
