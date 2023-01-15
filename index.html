@@ -9,10 +9,10 @@
 	<section id="header">
 		
 		<div>
-			<label>Biblioteca</label>
+			<label class="pag">Biblioteca</label>
 			<ul id="navbar">
 				<li><a class="active" href="#">Home</a></li>
-				<li><a href="#">Livros Requeridos</a></li>
+				<li><a href="livrosRec.html">Livros Requeridos</a></li>
 				<li><a href="#">Sobre</a></li>
 				<li><a href="#">Contacto</a></li>
 			</ul>
@@ -22,19 +22,12 @@
 		</section>
 	<h1>Registo de Saida de Livros</h1>
 	<form method="get" action="index.php">
-		
-			<div>
-				<label><b> Dados do Livro </b></label> <br>
-				Titulo: <input type="text" name="titulo" placeholder="Titulo do livro"> <br><br>
-				Edição: <input type="text" name="edicao" placeholder="Edição do livro"> <br><br>
-				Autor: <input type="text" name="autor" placeholder="Nome do Autor"> <br><br>
-			</div>
 
 			<div>
 				<label><b>Dados do Requerente</b></label><br>
 				Nome: <input type="text" name="nome" placeholder="Nome do Requerente"> <br><br>
 				Nr. BI: <input type="text" name="BI" maxlength="12" placeholder="Bihete de Identidade"> <br><br>
-				Contacto: +258 <input type="int" name="telefone" maxlength="9" placeholder="Ex: 840410143"> <br><br>
+				Contacto: +258 <input type="int" name="telefone" maxlength="9" placeholder="Ex: 840410143"> <br><br>				
 
 				<fieldset  size="20">
 					<legend>Nivel</legend>
@@ -44,6 +37,12 @@
 					<label for="aluno">Aluno</label>
 				</fieldset><br>
 
+				<div>
+				<label><b> Dados do Livro </b></label> <br>
+				Titulo: <input type="text" name="titulo" placeholder="Titulo do livro"> <br><br>
+				Edição: <input type="text" name="edicao" placeholder="Edição do livro"> <br><br>
+				Autor: <input type="text" name="autor" placeholder="Nome do Autor"> <br><br>
+			</div>
 				Data da Requisiçao: <input type="date" name="data"> <br><br>
 			</div>
 		

@@ -16,6 +16,7 @@
 
  	if ($nivel == "Professor") {
  		$nivel == "Professor";
+ 		$dataDev = date($dataAq);
  	} else {
  		$nivel == "Aluno";
  	}
@@ -23,20 +24,92 @@
 	<html>
 		<head>
 			<title></title>
+			<link rel='stylesheet' href='factura.css'>
 		</head>
 		<body>
-			<h1>RECIBO</h1>
-			<h1> dados do livro</h1>
-			<h1>$titulo</h1>
-			<h1>$edicao</h1>
-			<h1>$autor</h1>
-			<h1> dados do requerente</h1>
-			<h1>$nome</h1>
-			<h1>$BI</h1>
-			<h1>$telefone</h1>
-			<h1>$nivel</h1>
-			<h1>$dataAq</h1>
-			<h1>dataDev</h1>
+			<table>
+				<thead class = 'cabecalho'>
+					<tr>
+						<th>Factura da Requisição do Livrvo</th>
+						
+					</tr>
+				</thead>
+				<tbody class = 'corpo'>
+					<tr>
+						<td>
+							Nome do Requerente:
+						</td>
+						<td>
+							$nome
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Bilhete de Identidade: 
+						</td>
+						<td>
+							$BI
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Contacto do Requerente: 
+						</td>
+						<td>
+							$telefone
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Nivel do Requerente: 
+						</td>
+						<td>
+							$nivel
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Titulo do Livro: 
+						</td>
+						<td>
+							$titulo
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Edicao do Livro: 
+						</td>
+						<td>
+							$edicao
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Autor do Livro: 
+						</td>
+						<td>
+							$autor
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Data da requisicao: 
+						</td>
+						<td>
+							$dataAq
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Data da Devolução: 
+						</td>
+						<td>
+							$dataDev
+						</td>
+					</tr>					
+				</tbody>
+			</table><br>
+
 		</body>
 	</html>";
 
