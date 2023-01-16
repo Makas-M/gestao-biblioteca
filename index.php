@@ -25,9 +25,11 @@
 
  	if ($nivel == "Professor") {
  		$nivel == "Professor";
- 		$dataDev = date($dataAq);
+ 		$dataDev = date('Y-m-d', strtotime("+10 days", strtotime($dataAq)));
+
  	} else {
  		$nivel == "Aluno";
+ 		$dataDev = date('Y-m-d', strtotime("+3 days", strtotime($dataAq)));
  	}
  	$html = "<!DOCTYPE html>
 	<html>
@@ -113,7 +115,7 @@
 							Data da Devolução: 
 						</td>
 						<td>
-							dataDev
+							$dataDev
 						</td>
 					</tr>					
 				</tbody>
