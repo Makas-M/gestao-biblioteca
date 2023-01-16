@@ -1,9 +1,4 @@
 <?php
-	//dados do livro
-	$titulo = $_GET['titulo'];
-	$edicao = $_GET['edicao'];
-	$autor = $_GET['autor'];
- 	
 	//dados do requerente
 	$nome = $_GET['nome'];
 	$BI = $_GET['BI'];
@@ -11,6 +6,11 @@
  	$nivel = $_GET['categoria'];
  	$dataAq = $_GET['data'];
 
+ 	//dados do livro
+	$titulo = $_GET['titulo'];
+	$edicao = $_GET['edicao'];
+	$autor = $_GET['autor'];
+ 	
  	//conexao com a base de dados
  	$connection = mysqli_connect('localhost', 'root', '', 'gestao_biblioteca');
 
@@ -113,7 +113,7 @@
 							Data da Devolução: 
 						</td>
 						<td>
-							$dataDev
+							dataDev
 						</td>
 					</tr>					
 				</tbody>
