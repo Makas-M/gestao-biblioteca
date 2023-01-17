@@ -5,7 +5,7 @@
 	$telefone = $_GET['telefone'];
  	$nivel = $_GET['categoria'];
  	$dataAq = $_GET['data'];
-
+ 	
  	//dados do livro
 	$titulo = $_GET['titulo'];
 	$edicao = $_GET['edicao'];
